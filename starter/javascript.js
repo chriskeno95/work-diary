@@ -28,4 +28,12 @@ saveEvent.on("click", function(){
     setTimeout(function(){
     notification.addClass("hide");   
 },2000)
+
+//function to save description input and time to localStorage
+let time = $(this).parent().attr("id");
+let event = $(this).siblings(".description").val();
+
+localStorage.setItem(time,event);
+
+
 })
