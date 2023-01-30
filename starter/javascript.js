@@ -6,8 +6,10 @@
 //step 3 : use jquery to change the colours of each timeblock based on past, present, and future when the timeblock is viewed.
 
 //step 4 : Allow a user to enter an event when they click a timeblock and allow them to save the value to local storage
+
 $(document).ready(function(){
-//creating an array of timestamps that i will try and create rows for - this will contain the time, a type box and a save button
+
+
 let notification = $('#notification');
 let saveEvent = $(".saveEvent");
 let currentDate = $("#currentTime");
@@ -35,7 +37,7 @@ localStorage.setItem(time,event);
 
 //function to check current time and adjust row bg colour to determine past/present/future
 function hourStatus(){
-    var currentHour = moment().hours();
+    var currentHour = "14"//moment().hours();
 //first i set the current hour and create a forloop to run through the sections with the class 'time-block'
     for(let i = 0; i < $(".time-block").length; i++){
 //secondly i grab the id from the classes and store the value as the hourID for each section
