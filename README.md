@@ -30,9 +30,9 @@ No need to install anything to view this project; you can view it [here]()
 
 ## Screenshots
 
-![screenshot](./starter/images/screenshot001.png)
-![screenshot](./starter/images/screenshot002.png)
-![screenshot](./starter/images/screenshot003.png)
+![screenshot](./images/screenshot001.png)
+![screenshot](./images/screenshot002.png)
+![screenshot](./images/screenshot003.png)
 
 
 ## License
