@@ -37,7 +37,7 @@ localStorage.setItem(time,event);
 
 //function to check current time and adjust row bg colour to determine past/present/future
 function hourStatus(){
-    var currentHour = "14"//moment().hours();
+    var currentHour = moment().hours();
 //first i set the current hour and create a forloop to run through the sections with the class 'time-block'
     for(let i = 0; i < $(".time-block").length; i++){
 //secondly i grab the id from the classes and store the value as the hourID for each section
