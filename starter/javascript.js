@@ -12,13 +12,14 @@ let notification = $('#notification');
 let saveEvent = $(".saveEvent");
 let diary = $(".container");
 let input = $(".description");
-let currentDay = $("#currentDay");
+let currentDate = $("#currentTime");
 // code to add date and time to currentDayID
 var today = moment();
+var currentHour = moment().hours();
 
 //code to live update the time
 window.setInterval(function () {
-    currentDay.html(moment().format("dddd, D MMMM YYYY, h:mm:ss a"))
+    currentDate.html(moment().format("dddd, D MMMM YYYY, h:mm:ss a"))
 }, 1000);
 
 
@@ -37,3 +38,12 @@ localStorage.setItem(time,event);
 
 
 })
+
+//function to check current time and adjust row bg colour to determine past/present/future
+function hourStatus(){
+    for(let i = 0; i < $(".time-block").length; i++){
+    let hourID = $(".time-block")[i].getAttribute('id');
+     console.log(hourID);
+    }
+}
+hourStatus()
